@@ -203,8 +203,7 @@ h2 {
 	#skills {
 		height: 50%;
 		width: 50%;
-		margin-left: auto;
-		bottom: 30vh;
+		margin: auto;
 		left: 6vw;
 		position: relative;
 	}
