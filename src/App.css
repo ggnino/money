@@ -189,10 +189,11 @@ h2 {
 	#backend,
 	#fullstack,
 	#frontend {
-		font-size: 0.8rem;
+		padding-top: 5vh;
+		font-size: 0.6rem;
 	}
 	.btn {
-		font-size: 0.8rem;
+		font-size: 0.6rem;
 	}
 	#about .row {
 		margin-top: 5vh;
@@ -201,14 +202,15 @@ h2 {
 		font-size: 0.8rem;
 	}
 	#skills {
-		height: 50%;
+		height: 30%;
 		width: 50%;
 		margin: auto;
+		bottom: 5vh;
 		left: 6vw;
-		position: relative;
+		position: absolute;
 	}
 	#portfolio img {
-		width: 45%;
+		width: 28%;
 	}
 	.row {
 		margin: 0;
@@ -225,11 +227,9 @@ h2 {
 		padding: 0;
 	}
 	#about p {
-		font-size: 0.6rem;
+		font-size: 0.7rem;
 	}
-	#backend,
-	#fullstack,
-	#frontend {
-		font-size: 0.6rem;
+	#skills {
+		height: 25%;
 	}
 }
