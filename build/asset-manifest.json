@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f311886f.chunk.css",
+    "main.js": "/static/js/main.dbc52f15.chunk.js",
+    "main.js.map": "/static/js/main.dbc52f15.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.44847e73.js",
+    "runtime-main.js.map": "/static/js/runtime-main.44847e73.js.map",
+    "static/js/2.20cd8b7c.chunk.js": "/static/js/2.20cd8b7c.chunk.js",
+    "static/js/2.20cd8b7c.chunk.js.map": "/static/js/2.20cd8b7c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.f311886f.chunk.css.map": "/static/css/main.f311886f.chunk.css.map",
+    "static/js/2.20cd8b7c.chunk.js.LICENSE.txt": "/static/js/2.20cd8b7c.chunk.js.LICENSE.txt",
+    "static/media/calculator.4a57c721.PNG": "/static/media/calculator.4a57c721.PNG",
+    "static/media/filemicroservice.627c9270.JPG": "/static/media/filemicroservice.627c9270.JPG",
+    "static/media/fitapp.e5c8b873.PNG": "/static/media/fitapp.e5c8b873.PNG",
+    "static/media/fixerup.cb2f2646.PNG": "/static/media/fixerup.cb2f2646.PNG",
+    "static/media/library.a5f8e596.JPG": "/static/media/library.a5f8e596.JPG",
+    "static/media/metric.a49cb46e.JPG": "/static/media/metric.a49cb46e.JPG",
+    "static/media/roseshop.5215473d.PNG": "/static/media/roseshop.5215473d.PNG",
+    "static/media/showy.74831dd3.gif": "/static/media/showy.74831dd3.gif",
+    "static/media/App.css": "/static/media/showy2.7e647515.gif",
+    "static/media/uglyblog.15bceb1c.PNG": "/static/media/uglyblog.15bceb1c.PNG",
+    "static/media/url.eda3497b.JPG": "/static/media/url.eda3497b.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44847e73.js",
+    "static/js/2.20cd8b7c.chunk.js",
+    "static/css/main.f311886f.chunk.css",
+    "static/js/main.dbc52f15.chunk.js"
+  ]
+}
