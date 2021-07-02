@@ -64,7 +64,7 @@ function Navbar() {
 	// Render component
 	return (
 		<div>
-			<nav className="navbar navbar-expand-lg navbar-dark fixed">
+			<nav className="navbar navbar-expand-lg navbar-dark fixed-top">
 				<div className="container-fluid">
 					<Link style={style.home} to={style.home.href}>
 						<img id="navBrand" alt="navBrand" src={brand} />

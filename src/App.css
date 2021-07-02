@@ -17,9 +17,6 @@ h2 {
 	cursor: default;
 }
 
-body {
-	overflow: hidden;
-}
 .btn {
 	margin: 5px;
 }
@@ -40,8 +37,8 @@ body {
 /* Main Section */
 #main {
 	position: relative;
-	padding-top: 5vh;
-	height: 100vh;
+	margin-top: 5vh;
+	height: calc(100vh - 5vh);
 	color: white;
 	background-color: rgb(35, 22, 46);
 	background-size: cover;
@@ -49,26 +46,29 @@ body {
 #main h1 {
 	font-size: 6rem;
 	width: 5vw;
-	margin-top: 5vh;
+	position: absolute;
+	top: 5vh;
 	padding: 15px;
 }
 #main h2 {
 	position: absolute;
-	padding-top: 15px;
 	text-align: center;
-	top: 15vh;
+	top: 10vh;
 	right: 5vw;
 	font-size: 5.5rem;
+	padding: 15px;
 }
 
 #btn1 {
 	position: absolute;
+	top: 55vh;
 	left: 5vw;
 	margin-left: 5vw;
 }
 #btn2 {
 	position: absolute;
 	right: 5vw;
+	top: 55vh;
 	margin-right: 5vw;
 }
 
@@ -102,14 +102,16 @@ body {
 .resize2 {
 	width: 100%;
 	padding: 10px;
-	margin: 0px 20px;
+	/* margin: 0px 20px; */
 }
 #skill {
 	animation-duration: 20.5s;
 }
 #skills {
+	position: relative;
 	background-color: rgba(0, 0, 0, 0.5);
 	padding: 5px;
+	right: 5vw;
 	border: 2px solid black;
 	border-radius: 10px;
 	animation-duration: 10.5s;
@@ -121,8 +123,9 @@ body {
 /* Portfolio */
 #portfolio {
 	position: relative;
+	margin-top: 8vh;
 	padding-top: 7vh;
-	height: 100vh;
+	height: calc(100vh - 8vh);
 	color: white;
 	background-color: black;
 	text-align: center;
@@ -137,8 +140,9 @@ body {
 #frontend,
 #contact {
 	position: relative;
-	padding-top: 7vh;
-	height: 100vh;
+	margin-top: 8vh;
+	padding-top: 8vh;
+	height: calc(100vh - 8vh);
 	color: white;
 	background-color: black;
 	text-align: center;
@@ -148,10 +152,8 @@ body {
 @media screen and (max-width: 1025px) {
 	#main h1,
 	#main h2 {
-		font-size: 5rem;
-	}
-	#main h2 {
 		top: 10vh;
+		font-size: 5rem;
 	}
 	#skills {
 		height: 50vh;
@@ -171,11 +173,11 @@ body {
 	}
 }
 @media screen and (max-width: 426px) {
-	#main {
-		padding-top: 25vh;
-	}
 	#main h2 {
-		padding-top: 20vh;
+		margin-top: 15vh;
+	}
+	#main h1 {
+		margin-top: 17vh;
 	}
 	#main h1,
 	#main h2 {
@@ -203,6 +205,9 @@ body {
 		height: 50%;
 		width: 50%;
 		margin-left: auto;
+		bottom: 30vh;
+		left: 6vw;
+		position: relative;
 	}
 	#portfolio,
 	#portfolio .nav-link {
@@ -214,5 +219,16 @@ body {
 	.resize {
 		padding: 0;
 		margin: 0;
+	}
+}
+@media screen and (max-width: 380px) {
+	#about p {
+		font-size: 0.6rem;
+	}
+	#backend,
+	#fullstack,
+	#frontend {
+		font-size: 0.6rem;
+		padding: 0;
 	}
 }

@@ -14,7 +14,7 @@ function Frontend() {
 					<h1>Front-End</h1>
 					<div className="col-md-4">
 						<img className="resize2" src={img} alt="frontend-img" />
-						<p className="p-2 text-justify">
+						<p className="text-justify">
 							A calculator app for normal operations. Plus, it has a binary mode
 							for binary numbers. Built this with Reactjs and CSS
 						</p>
@@ -37,7 +37,7 @@ function Frontend() {
 					</div>
 					<div className="col-md-4">
 						<img className="resize2" src={img2} alt="frontend-img2" />
-						<p className="p-2 text-justify">
+						<p className="text-justify">
 							A mock design for a client with a rose shop. The design goal was
 							to be simple and straight forward for the user. Built this simple
 							app with react and some css.
@@ -61,7 +61,7 @@ function Frontend() {
 					</div>
 					<div className="col-md-4">
 						<img className="resize2" src={img3} alt="frontend-img3" />
-						<p className="p-2 text-justify">
+						<p className="text-justify">
 							A mock design for a client that needed a redesign for their blog.
 							Built this app using Bootstrap/CSS and Reactjs
 						</p>
