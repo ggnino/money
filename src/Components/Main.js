@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import img from "../imgs/heart.png";
 import img2 from "../imgs/coding2.png";
@@ -8,13 +8,23 @@ import Navbar from "./Navbar";
 function Main() {
 	// useState hook for styling
 	const [style, setStyle] = useState({
-		background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${img3}) no-repeat center center rgb(35, 22, 46)`,
+		background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${img3}) center/70% no-repeat rgb(35, 22, 46)`,
 		imgOn: false,
 		animate: true,
 		class: "",
 		class2: "",
 	});
 
+	useEffect(() => {
+		if (window.innerWidth <= 1024) {
+			setStyle((style) => {
+				return {
+					...style,
+					background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${img3}) center/cover no-repeat rgb(35, 22, 46)`,
+				};
+			});
+		}
+	}, []);
 	// Event handler for when to style the component
 	const clicker = (e) => {
 		if (e.target.id === "btn2") {
@@ -30,17 +40,30 @@ function Main() {
 			return;
 		}
 		if (style.imgOn) {
+			if (window.innerWidth <= 1024) {
+				setStyle({
+					...style,
+					background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${img3}) center/cover no-repeat rgb(35, 22, 46)`,
+				});
+			} else
+				setStyle({
+					...style,
+					background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${img3}) center/70%  no-repeat rgb(35, 22, 46)`,
+					imgOn: !style.imgOn,
+				});
+		} else {
+			if (window.innerWidth <= 1024) {
+				setStyle({
+					...style,
+					background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${img4}) center/cover no-repeat rgb(35, 22, 46)`,
+				});
+			}
 			setStyle({
 				...style,
-				background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${img3}) no-repeat center center rgb(35, 22, 46)`,
+				background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${img4}) center/70%  no-repeat rgb(35, 22, 46)`,
 				imgOn: !style.imgOn,
 			});
-		} else
-			setStyle({
-				...style,
-				background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${img4}) no-repeat center center rgb(35, 22, 46)`,
-				imgOn: !style.imgOn,
-			});
+		}
 	};
 
 	// Render component
